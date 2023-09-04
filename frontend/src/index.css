@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import "bootstrap/dist/css/bootstrap.min.css"; 
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: rgb(36, 39, 41) !important;
+}
+
+.tag-button {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+.tag-space {
+  margin-right: 10px;
+}
+
+/* modal */
+
+/* Styles for the main container */
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Styles for the "Open Modal" button */
+.open-modal-button {
+  margin-bottom: 20px;
+}
+
+/* Styles for the modal */
+.modal-dialog {
+  max-width: 500px;
+}
+
+/* Styles for the modal header */
+.modal-header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-bottom: none;
+}
+
+/* Styles for the modal title */
+.modal-title {
+  font-size: 1.25rem;
+}
+
+/* Styles for the modal body */
+.modal-body {
+  padding: 20px;
+}
+
+/* Styles for input fields */
+.modal-body input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* Styles for modal footer */
+.modal-footer {
+  border-top: none;
+  padding: 10px;
+}
+
+/* Styles for buttons in modal footer */
+.modal-footer button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Styles for primary button in modal footer */
+.modal-footer .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+}
+
+/* Styles for secondary button in modal footer */
+.modal-footer .btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: white;
+}
+
+/* Close button in the modal header */
+.close-button {
+  cursor: pointer;
+}
+
+/* Hover effect for close button */
+.close-button:hover {
+  color: #f8f9fa;
+}
+
+
+/*  */
+
+
+/* Styling for the search bar */
+.form-row {
+  align-items: flex-end;
+}
+
+/* Styling for the pagination */
+.pagination {
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Styling for individual pagination items */
+.pagination-item {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+/* Styling for the Image item cards */
+.card {
+  border: none;
+}
+
+/* Styling for Image item card images */
+.card-img-top {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+/* Styling for Image item card content */
+.card-body {
+  padding: 15px;
+}
+
+/* Styling for Image item card title */
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Styling for Image item card description */
+.card-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Styling for Image item card keywords */
+.card-keywords {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* Styling for loading indicator */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+/* Styling for null image */
+.null-image {
+  max-height: 200px;
+  object-fit: contain;
+}
+
+
+/* Style for the sorting dropdown */
+select {
+  margin: 10px 0;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style for the image cards */
+.ImageCard {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ImageCard img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Optional: Add hover effect to the image cards */
+.ImageCard:hover {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* ImageSearch.css */
+
+.image-search-container {
+  padding: 20px;
+}
+
+/* Pagination styling */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.page-number {
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.currentPage-number {
+  background-color: green;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* ImageSearch.css */
+
+/* Style for the welcome modal overlay */
+.ReactModal__Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for the welcome modal content */
+.ReactModal__Content {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the "Continue" button */
+.ReactModal__Content button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Style for the "Continue" button on hover */
+.ReactModal__Content button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for the image-search-container div */
+.image-search-container {
+  padding: 20px;
+}
+
+/* Style for the select dropdown */
+.image-search-container select {
+  margin-top: 10px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+/* Style for the pagination controls */
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Style for the page number in pagination */
+.currentPage-number {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.upload-heade{
+   color: #5baf48;
+  text-align: center;
+  color: aliceblue
+}
+h2{
+  color: rgb(37, 117, 188)
+}
+
+/* ColorPaletteFilter.css */
+
+.color-palette-filter {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.color-palette-filter h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.color-palette-filter select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+}
+
+/* Style for the dropdown options */
+.color-palette-filter select option {
+  font-size: 16px;
+}
+
